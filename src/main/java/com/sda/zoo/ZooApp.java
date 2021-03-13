@@ -40,9 +40,6 @@ public class ZooApp {
     kitchen.eatInKitchen(eagle);
     kitchen.eatInKitchen(anotherDuck);
     kitchen.eatInKitchen(anotherEagle);
-
-    Duck.DuckPrinter duckPrinter = new Duck.DuckPrinter();
-    duckPrinter.print();
   }
 
 }

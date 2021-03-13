@@ -6,12 +6,6 @@ public class Duck extends Animal implements FlyBehavior {
     super(false);
   }
 
-  static class DuckPrinter {
-    void print() {
-      System.out.println("I AM A STATIC NESTED CLASS!!");
-    }
-  }
-
   @Override
   public void eat(String something) {
     System.out.println("Duck is eating " + something);
