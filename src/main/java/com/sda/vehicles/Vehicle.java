@@ -7,12 +7,14 @@ public class Vehicle {
   int seats;
 
   public Vehicle() {
-    wheels = 4;
+    this(4);
+
     System.out.println("Tworzenie vehicle z " + wheels + " kołami.");
   }
 
   public Vehicle(int wheels) {
-    this.wheels = wheels;
+    this(wheels, "nieznana");
+
     System.out.println("Tworzenie vehicle z " + wheels + " kołami.");
   }
 
