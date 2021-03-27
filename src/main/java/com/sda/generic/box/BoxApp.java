@@ -1,7 +1,9 @@
-package com.sda.generic;
+package com.sda.generic.box;
+
+import com.sda.generic.road.Road;
+import com.sda.vehicles.Car;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 public class BoxApp {
   public static void main(String[] args) {
@@ -16,5 +18,13 @@ public class BoxApp {
     BigDecimal bigDecimal = BigDecimal.valueOf(1.123456);
 
     System.out.println(bigDecimal);
+
+    // ŹLE! UŻYCIE SUROWEGO TYPU ROAD, RZUTOWANIE
+    Box rawBox = new Box();
+    rawBox.set(1234);
+
+    Object rawRoadItem = rawBox.get();
+    // WYWALI SIĘ W RUNTIME, NIE JEST SPRAWDZANE PRZY KOMPILACJI
+    Car car = (Car) rawBox.get();
   }
 }
