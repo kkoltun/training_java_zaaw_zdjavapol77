@@ -8,7 +8,7 @@ import java.util.List;
 public class BasketballApp {
   public static void main(String[] args) {
     // ZESPOL BASKETBALL TEAM
-    Player youngJordan = new Player("M", "J", 180);
+    Player youngJordan = new Player("M", "J", 160);
     Player oldJordan = new Player("M", "J", 198);
     Player gortat = new Player("M", "G", 211);
 
@@ -20,7 +20,7 @@ public class BasketballApp {
     team.addPlayer(gortat);
 
     System.out.println(team.getPlayers());
-
+    System.out.println(team.getHigherThan180());
     System.out.println(team.getHigherThan200());
 
     // SORTOWANIE
